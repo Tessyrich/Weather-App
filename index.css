@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.panel {
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .cont,
+  .panel {
+    top: initial;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: i12px;
+  }
+}
