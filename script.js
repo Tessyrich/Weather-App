@@ -86,7 +86,23 @@ const fetchWeatherData = () => {
       const time = date.substr(11);
 
       //   reformat the date display
-      dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m} ${y}`;
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      dateOutput.innerHTML = ` ${d}, ${monthNames[m - 1]} ${y}`;
+
       timeOutput.innerHTML = time;
       //   Name of city
       nameOutput.innerHTML = data.location.name;
