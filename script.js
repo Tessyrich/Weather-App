@@ -101,7 +101,7 @@ const fetchWeatherData = () => {
         "December",
       ];
 
-      dateOutput.innerHTML = ` ${d}, ${monthNames[m - 1]} ${y}`;
+      dateOutput.innerHTML = ` ${d} ${monthNames[m - 1]} ${y}`;
 
       timeOutput.innerHTML = time;
       //   Name of city
